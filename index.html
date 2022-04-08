@@ -295,6 +295,109 @@
             </p>
         </div>
 
+        <div class="col-12">
+            <h3>¿Que es un garbage collector?</h3>
+            <p>
+                El recolector de basura o garbage collector es una de las piezas fundamentales del lenguaje Java 
+                y su plataforma, es la funcionalidad que libera al programador de la solicitud y liberación de 
+                memoria de forma explícita lo que facilita a los programadores la creación de programas, 
+                una mayor productividad, evita errores y fallos de seguridad. Una ventaja sobre lenguajes que no 
+                poseen recolectores de basura y que se ha adoptado por los lenguajes desarrollados en la últimas 
+                décadas.
+            </p>
+        </div>
+
+        <div class="col-12">
+            <h3>Diferencia entre Overload y Override </h3>
+            <p>
+                <ul>
+                    <li>
+                        Overload
+                        <p>
+                            Sobrecarga un método.
+                        </p>
+                    </li>
+                    <li>
+                        Override
+                        <p>
+                            Sobrescribe un método.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="col-12">
+            <h3>¿Que es thread y deadlock?</h3>
+            <p>
+                <ul>
+                    <li>
+                        Thread
+                        <p>
+                            Es la clase base de Java para definir hilos de ejecución concurrentes dentro de un mismo programa.
+                        </p>
+                    </li>
+                    <li>
+                        Deadlock
+                        <p>
+                            Deadlock sucede cuando dos threads se bloquean en espera del lock de un objeto que cada thread posee. 
+                            Ni uno de los threads se puede ejecutarse hasta que el otro abandone su lock, por lo que esperarán para 
+                            siempre o se bloqueara indefinidamente.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </div>  
+        
+        <div class="col-12">
+            <h3>Diferencia entre hashmap y hastable</h3>
+            <p>
+                <ul>
+                    <li>
+                        Hashmap
+                        <p>
+                            <ul>
+                                <li>
+                                    HashMap no está sincronizado. Esto significa que si se usa en un entorno multi-hilo, entonces más de un hilo puede acceder y procesar el HashMap simultáneamente.
+                                </li>
+                                <li>
+                                    HashMap permite una llave nula y cualquier número de valores nulos.
+                                </li>
+                                <li>
+                                    La implementación de HashMap LinkedHashMap mantiene el orden de inserción y TreeMap ordena los mapeos en base al orden ascendente de las llaves.
+                                </li>
+                                <li>
+                                    HashMap implementa la interfaz del Mapa y es parte del marco de la colección desde el principio.
+                                </li>
+                                <li>
+                                    Otra diferencia entre estas clases es que el Iterator del HashMap es un fail-fast y lanza ConcurrentModificationException si cualquier otro Thread modifica el mapa estructuralmente agregando o quitando cualquier elemento excepto el propio método remove() del iterator. En palabras simples, fail-fast significa: Cuando se llama iterator.next(), si se ha hecho alguna modificación entre el momento en que se creó el iterator y el momento en que se llama next(), se lanza inmediatamente una ConcurrentModificationException.
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                        Hastable
+                        <p>
+                            <ul>
+                                <li>
+                                    Hashtable está sincronizado. Asegura que no más de un hilo puede acceder a la Hashtable en un momento dado. El hilo que trabaja en el Hashtable adquiere un bloqueo en él para hacer que los otros hilos esperen hasta que su trabajo se complete.
+                                </li>
+                                <li>
+                                    Hashtable no permite llaves nulas y valores nulos.
+                                </li>
+                                <li>
+                                    Hashtable no garantiza ningún tipo de orden. No mantiene los mapeos en ningún orden particular.
+                                </li>
+                                <li>
+                                    Inicialmente Hashtable no era la parte del marco de la colección se ha hecho un miembro del marco de la colección más tarde después de haber sido actualizado para implementar la interfaz del Mapa.
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </div>
+
     </div>
     
 </body>
