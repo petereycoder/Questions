@@ -398,6 +398,166 @@
             </p>
         </div>
 
+        <div class="col-12">
+            <h3>Diferencia entre "==" and equals</h3>
+            <p>
+                <ul>
+                    <li>
+                        == -> es una comparación de referencia, es decir, ambos objetos apuntan a la misma ubicación de memoria.
+                    </li>
+                    <li>
+                        .equals() -> evalúa la comparación de valores en los objetos
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="col-12">
+            <h3>Pasos a seguir para conectar una BD en Java</h3>
+            <p>
+                <ol>
+                    <li>
+                        Descargue e instale MySQL
+                    </li>
+                    <li>
+                        Crea una base de datos en MySQL.
+                    </li>
+                    <li>
+                        Descargue el controlador JDBC y colóquelo en el classpath.
+                    </li>
+                    <li>
+                        Escribe el código Java para la conectividad.
+                    </li>
+                    <li>
+                        Prueba la conexión.
+                    </li>
+                </ol>
+            </p>
+        </div>
+
+        <div class="col-12">
+            <h3>¿Qué es J2EE?</h3>
+            <p>
+                Proporciona un estándar de desarrollo de aplicaciones de empresa multinivel. <br>
+                La economía y tecnología actuales han incrementado la necesidad de soluciones de gestión de información más rápidas, más eficaces y de mayor escala. La especificación J2EE satisface estos desafíos, ya que proporciona un modelo de programación que mejora la productividad del desarrollo, estandariza la plataforma para alojar aplicaciones de empresa y asegura la portabilidad de las aplicaciones desarrolladas con un conjunto amplio de pruebas. <br>
+                La arquitectura J2EE da soporte al desarrollo basado en componentes de las aplicaciones de empresa multinivel. Un sistema de aplicación J2EE suele incluir los niveles siguientes: <br>
+                <ul>
+                    <b>Nivel de cliente</b>
+                    <li>
+                        En el nivel de cliente, los componentes Web como, por ejemplo, los servlets y JSP (JavaServer Pages) o las aplicaciones Java autónomas proporcionan una interfaz dinámica para el nivel medio.
+                    </li>
+                    <b>Nivel medio</b>
+                    <li>
+                        En el nivel de servidor, o nivel medio, los enterprise beans y los Servicios Web encapsulan la lógica empresarial que es posible distribuir para la aplicación. Estos componentes de nivel de servidor se encuentran en un J2EE Application Server, que proporciona la plataforma para que estos componentes realicen acciones y almacenen datos.
+                    </li>
+                    <b>Nivel de datos de empresa</b>
+                    <li>
+                        En el nivel de datos los datos de la empresa se almacenan y se conservan, habitualmente en una base de datos relacional.
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="col-12">
+            <h3>¿Qué es Javabean?</h3>
+            <p>
+                Los JavaBeans son clases que encapsulan muchos objetos en un solo objeto (el bean). Tiene las siguientes propiedades.
+                <ol>
+                    <li>
+                        importar interfaz serializable
+                    </li>
+                    <li>
+                        campos privados
+                    </li>
+                    <li>
+                        constructores
+                    </li>
+                    <li>
+                        getter/setter
+                    </li>
+                </ol>
+            </p>
+        </div>
+
+        <div class="col-12">
+            <h3>¿Qué es enterprise Javabean(EJB)?</h3>
+            <p>
+                Los Enterprise Java Beans son a día de hoy componentes fundamentales en el desarrollo de aplicaciones Java Enterprise Edition . Sin embargo muchas veces surgen dudas sobre como funciona un Enterprise Java Bean a detalle. Todos tenemos bastante clara la idea básica y es que normalmente un cliente realiza una petición al servidor, el servidor la procesa a través de un Servlet  o un Managed Bean  (JSF ) delegando en un EJB . El EJB recibe la petición invoca la funcionalidad de negocio correspondiente devolviendo un resultado que el Servlet/ Managed Bean termina presentando en una vista JSP /JSF page.
+            </p>
+        </div>
+
+        <div class="col-12">
+            <h3>¿Qué es un servlet?</h3>
+            <p>
+                Un servlet es un programa Java que se ejecuta en un servidor Web y construye o sirve páginas web. De esta forma se pueden construir páginas dinámicas, basadas en diferentes fuentes variables: datos proporcionados por el usuario, fuentes de información variable (páginas de noticias, por ejemplo), o programas que extraigan información de bases de datos. 
+            </p>
+        </div>
+
+        <div class="col-12">
+            <h3>Parámetros en los métodos doGet(?,?) y doPost(?,?)</h3>
+            <p> ProcessRequest (solicitud, respuesta). </p>
+        </div>
+
+        <div class="col-12">
+            <h3>¿Qué es un JSP, un JSF, un framework?</h3>
+            <p>
+                <b>JSP</b>
+                <p>
+                    <ul>
+                        <li>
+                            Era el framework para la generación de páginas web anterior a que se definiera JSF.
+                        </li>
+                        <li>
+                            Se basa en generar un fichero .jsp que es "traducido" a una clase Servlet que a su vez es compilada y ejecutada.
+                        </li>
+                        <li>
+                            Hay dos versiones: con scriptlets (<% %>) que se considera obsoleta, o con la Java Standard Template Library (JSTL). La última implementa el MVC, mientras que con la primera normalmente todo el código va en el propio JSP.
+                        </li>
+                    </ul>
+                    <b>JSF</b>
+                    <p>
+                        <ul>
+                            <li>
+                                Es un framework para la generación de páginas web dentro de una aplicación web. Sigue la filosofía MVC.
+                            </li>
+                            <li>
+                                Tiene dos "modos": usando JSP o Facelets. Inicialmente se usaban JSPs, pero a partir de la versión 1.2 por defecto se usan Facelets (componentes XML). Normalmente se confunde "JSF" por "Facelets" (si buscas "componentes JSF" encontrarás librerías de Facelets).
+                            </li>
+                            <li>
+                                Estandariza cuestiones como navegación entre páginas y la internacionalización de recursos que en JSP simplemente no estaban definidas.
+                            </li>
+                        </ul>
+                    </p>
+                    <b>Framework</b>
+                    <p>
+                        Un framework es un esquema o marco de trabajo que ofrece una estructura base para elaborar un proyecto con objetivos específicos, una especie de plantilla que sirve como punto de partida para la organización y desarrollo de software.
+                    </p>
+                </p>
+            </p>
+        </div>
+
+        <div class="col-12">
+            <h3>Términos de Spring, struts, hibernate frameworks</h3>
+            <p>
+                <ul>
+                    <li>
+                        <b>Spring</b>
+                        <p>
+                            
+                        </p>
+                    </li>
+                    <li>
+                        <b>Struts</b>
+                        <p></p>
+                    </li>
+                    <li>
+                        <b>Hibernate</b>
+                        <p></p>
+                    </li>
+                </ul>
+            </p>
+        </div>
+
     </div>
     
 </body>
