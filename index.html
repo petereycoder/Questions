@@ -238,6 +238,10 @@
                             Indica un bloque de código en una estructura try-catch que siempre se ejecutará
                         </p>
                     </li>
+                    <li>
+                        Finalize
+                        <p>Cuando el recolector de basura de Java determina que ya no hay más referencias a un objeto y se dispone a destruirlo, llama al método java.lang.Object.finalize de éste. Si la clase en cuestión ha declarado su propio método finalize sobrescribiendo al de la clase Object (todas las clases Java heredan de Object), entonces el recolector de basura llama a este método de la clase en el objeto que va a destruir.</p>
+                    </li>
                 </ul>
             </p>
         </div>
@@ -716,6 +720,105 @@
                         El <b>ejemplo de código</b> en uno de los lenguajes de programación populares facilita la asimilación de la idea que se esconde tras el patrón.
                     </li>
                 </ul>
+            </p>
+        </div>
+
+        <div class="col-12">
+            <h3>¿Cuáles son los 4 fundamentos propios de Java?</h3>
+            <p>
+                <ul>
+                    <li>Polimorfismo</li>
+                    <li>Herencia Simple</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="col-12">
+            <h3>¿Diferencia entre rest y restfull?</h3>
+            <p>
+                <b>Rest:</b> es un modelo de arquitectura web basado en el protocolo HTTP para mejorar las comunicaciones cliente-servidor. <br><br>
+                <b>Restfull:</b> son programas basados en REST. Su principal diferencia es que la API no necesita ejecutar una red, sino que es posible hacerlo desde un mismo ordenador. <br>
+                <b>Rest sigue una serie de principios:</b>
+                <ol>
+                    <li>
+                        Todo lo que se mueve a través de las comunicaciones web son recursos, es decir, los datos se representan con el formato específico que tienen y no como un archivo físico.
+                    </li>
+                    <li>
+                        Cada uno de estos recursos ha de tener un identificador único, el cual se representa a través de su URL, puesto que hay una infinidad de recursos en la web y han de ser accesibles e identificables.
+                    </li>
+                    <li>
+                        Este protocolo de transmisión de datos debe utilizar los verbos estándares de HTTP, definidos en el protocolo nativo, donde cada uno de estos verbos significa una acción diferente. Hay 8 acciones principales ya definidas: GET, POST, PUT, DELETE, HEAD, OPTIONS, TRACE, CONNECT.
+                    </li>
+                    <li>
+                        Cada recurso puede tener múltiples representaciones, independientemente de cómo esté almacenado. Un ejemplo sería un recurso en formato XML y poder solicitarlo en JSON.
+                    </li>
+                    <li>
+                        Comunicaciones cliente-servidor, se trata de comunicaciones que se denominan sin estado (STATELESS), lo que significa que cada petición al servidor es tratada de manera totalmente independiente.
+                    </li>
+                </ol>
+            </p>
+        </div>
+
+        <div class="col-12">
+            <h3>Tipos de códigos que se generan al ejecutar una petición</h3>
+            <p>
+                <ul>
+                    <li>1XX son codigos informativos.</li>
+                    <li>2XX cuando las peticiones se realizan correctamente.</li>
+                    <li>3XX son para redirecciones.</li>
+                    <li>4XX errores de lado de usuarios.</li>
+                    <li>5XX errores ocurridos del lado del servidor.</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="col-12">
+            <h3>¿Qué métodos se usan para el protocolo http?</h3>
+            <p>
+                <ul>
+                    <li>GET:  permitía al principio solicitar al servidor un documento estático, existente en su espacio de direcciones. Luego se vio que esto no era suficiente, y se introdujo la posibilidad de solicitar búsquedas al servidor, de forma que el documento no tuviera que ser necesariamente estático, sino que la búsqueda estuviera condicionada por unos determinados parámetros.</li>
+                    <li>
+                        OPTIONS: para consultar al servidor acerca de las funcionalidades que proporciona.
+                    </li>
+                    <li>
+                        HEAD: el servidor responde de forma idéntica a un comando GET, pero no devuelve el cuerpo del documento respuesta, sólo las cabeceras. Suele emplearse para comprobar características del documento.
+                    </li>
+                    <li>
+                        POST: se emplea para enviar al servidor un bloque de datos en el cuerpo de la petición.
+                    </li>
+                    <li>
+                        PUT: solicita que el cuerpo de la petición que envía se almacene en el espacio de direcciones del servidor, con el identificador URI solicitado (guarda un documento en el servidor).
+                    </li>
+                    <li>
+                        DELETE: solicita borrar un documento específico del servidor.
+                    </li>
+                    <li>
+                        TRACE: se utiliza para seguir el camino de la petición por múltiples servidores y proxies (útil para depurar problemas de red).
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="col-12">
+            <h3>¿Qué es la inyección de dependencias?</h3>
+            <p>
+                el Principio de Inversión de Dependencias propone evitar las dependencias rígidas entre componentes mediante las siguientes técnicas:
+                <ul>
+                    <li>
+                        <b>Utilizar abstracciones</b> (interfaces) en lugar de referencias directas entre clases, lo que facilita que podamos reemplazar componentes con suma facilidad.
+                    </li>
+                    <li>
+                        <b>Hacer que una clase reciba referencias a los componentes que necesite para funcionar</b>, en lugar de permitir que sea ella misma quien los instancie de forma directa o a través de factorías.
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="col-12">
+            <h3>¿Qué es y cómo se maneja una excepción?</h3>
+            <p>
+                Una excepción es un error que ocurre en tiempo de ejecución. Utilizando el subsistema de manejo de excepciones de Java, puede, de una manera estructurada y controlada, manejar los errores de tiempo de ejecución. <br>
+                El manejo de excepciones Java se gestiona a través de cinco palabras clave: try, catch, throw, throws, y finally.
             </p>
         </div>
 
